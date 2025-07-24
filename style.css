@@ -1,146 +1,58 @@
+
 body {
-    background: linear-gradient(135deg, #F7CAC9 0%, #92A8D1 100%);
-    min-height: 100vh;
+    background: #e3f2fd;
+    font-family: 'Pretendard', 'Segoe UI', sans-serif;
     margin: 0;
-    font-family: 'Jua', 'Gowun Dodum', 'Malgun Gothic', Arial, sans-serif;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.container {
-    max-width: 420px;
-    margin: 48px auto 0 auto;
-    background: rgba(255,255,255,0.85);
-    border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(146,168,209,0.18);
-    padding: 32px 28px 28px 28px;
-    font-family: 'Jua', 'Gowun Dodum', 'Malgun Gothic', Arial, sans-serif;
+.game-container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #bde0fe;
+    padding: 32px 36px 24px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-h1 {
-    color: #6a1b9a;
-    text-align: center;
-    margin-bottom: 24px;
-    font-size: 2em;
+.main-title {
+    font-size: 2.2rem;
+    color: #1976d2;
+    margin-bottom: 8px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+#game-canvas {
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px #bde0fe;
+    margin-bottom: 18px;
+    border: 2.5px solid #a0c4ff;
+    display: block;
+}
+#score-board {
+    font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
 }
-
-#recommendBtn {
-    background: linear-gradient(90deg, #F7CAC9 0%, #92A8D1 100%);
+#restart-btn {
+    display: none;
+    margin-top: 18px;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    background: #1976d2;
     color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 12px 28px;
-    font-size: 1.1em;
-    font-weight: bold;
     cursor: pointer;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 8px rgba(146,168,209,0.12);
+    font-weight: 700;
     transition: background 0.2s;
 }
-#recommendBtn:hover {
-    background: linear-gradient(90deg, #92A8D1 0%, #F7CAC9 100%);
-}
-
-#result {
-    background: #f7faff;
-    border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(146,168,209,0.10);
-    padding: 18px 16px;
-    margin-top: 12px;
-    font-size: 1.15em;
-    color: #333;
-    word-break: keep-all;
-    font-family: 'Jua', 'Gowun Dodum', 'Malgun Gothic', Arial, sans-serif;
-}
-
-#ladderResult {
-    margin-top: 18px;
-    text-align: left;
-    font-family: 'Jua', 'Gowun Dodum', 'Malgun Gothic', Arial, sans-serif;
-}
-body {
-    background: linear-gradient(135deg, #F7CAC9 0%, #92A8D1 100%);
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Noto Sans KR', 'Malgun Gothic', Arial, sans-serif;
-}
-/* 사다리타기 결과 꾸미기 */
-#ladderResult {
-  background: linear-gradient(135deg, #e0f7fa 0%, #fce4ec 100%);
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 18px 20px;
-  margin-top: 24px;
-  font-size: 1.15em;
-  color: #333;
-  max-width: 400px;
-  word-break: keep-all;
-}
-
-#ladderResult b {
-  color: #1976d2;
-  font-size: 1.18em;
-}
-
-.ladder-pair {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-}
-.ladder-from {
-  background: #fffde7;
-  border-radius: 8px;
-  padding: 4px 10px;
-  margin-right: 8px;
-  font-weight: bold;
-  color: #d84315;
-}
-.ladder-arrow {
-  margin-right: 8px;
-  color: #1976d2;
-  font-size: 1.1em;
-}
-.ladder-to {
-  background: #e1bee7;
-  border-radius: 16px;
-  padding: 4px 10px;
-  font-weight: bold;
-  color: #6a1b9a;
-  font-family: 'Jua', 'Gowun Dodum', 'Malgun Gothic', Arial, sans-serif;
-}
-.ladder-score {
-  display: block;
-  margin-top: 14px;
-  font-size: 1.2em;
-  color: #388e3c;
-  font-weight: bold;
-  text-align: center;
-}
-body {
-    /* 중복 body 제거됨 */
-}
-.container {
-    /* 중복 container 제거됨 */
-}
-h1 {
-    color: #333;
-    margin-bottom: 24px;
-}
-button {
-    background: #4f8cff;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 24px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-button:hover {
-    background: #2563eb;
-}
-#result {
-    margin-top: 32px;
-    font-size: 1.3em;
-    color: #2563eb;
-    min-height: 32px;
+#restart-btn:hover {
+    background: #1565c0;
 }
